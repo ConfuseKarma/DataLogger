@@ -4,7 +4,7 @@ Código C/C++ usado no Arduino IDE
 
 Projeto de Sistemas Embarcados realizado em grupo por:
 
-- Aparecida
+- Aparecida Joana
 - Eduardo Accacio Spedine Toledo, RA: 081220018
 - Kauê de Souza Silva, RA: 081220003
 - Guilherme Rodrigues dos Santos, RA: 0812200
