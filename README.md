@@ -8,7 +8,7 @@ Desenvolvido com a finalidade de atender às demandas de diversos setores, desde
 
 ### **Diagrama Elétrico**
 
-### **Código Arduino**
+### **Código Fonte Arduino**
 
 ```cpp
 #include <Wire.h>
