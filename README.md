@@ -22,4 +22,5 @@ Desenvolvido com a finalidade de atender às demandas de diversos setores, desde
 
 ### Código Fonte
 
-O código fonte está disponível no repositório público do GitHub neste [link](inserir_link_aqui). Certifique-se de ler e compreender os comentários no código para uma melhor compreensão do funcionamento.
+O código fonte está disponível no repositório público do GitHub neste [link](https://github.com/ConfuseKarma/DataLogger/blob/main/codigo-fonte.md). Certifique-se de ler e compreender os comentários no código para uma melhor compreensão do funcionamento.
+
