@@ -7,10 +7,10 @@ Código C/C++ usado no Arduino IDE
 
 Projeto de Sistemas Embarcados realizado em grupo por:
 
-- Aparecida Joana
+- Aparecida Joana Moreto, RA: 082210001
 - Eduardo Accacio Spedine Toledo, RA: 081220018
 - Kauê de Souza Silva, RA: 081220003
-- Guilherme Rodrigues dos Santos, RA: 0812200
+- Guilherme Rodrigues dos Santos, RA: 081220010
 - Marcos Felipe Correa dos Santos, RA: 081220020
 
 🎥 Vídeo do Projeto no _Youtube_: 
