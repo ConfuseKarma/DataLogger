@@ -9,8 +9,8 @@ Projeto de Sistemas Embarcados realizado em grupo por:
 
 - Aparecida Joana Moreto, RA: 082210001
 - Eduardo Accacio Spedine Toledo, RA: 081220018
-- Kauê de Souza Silva, RA: 081220003
 - Guilherme Rodrigues dos Santos, RA: 081220010
+- Kauê de Souza Silva, RA: 081220003
 - Marcos Felipe Correa dos Santos, RA: 081220020
 
 🎥 Vídeo do Projeto no _Youtube_: 
