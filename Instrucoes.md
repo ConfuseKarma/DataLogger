@@ -1,4 +1,7 @@
 # DataLogger
+
+<img src="https://github.com/ConfuseKarma/DataLogger/assets/145780136/01af51f9-bb49-4ad6-8fde-38ab25d8a91f" width="45%">
+
 Código C/C++ usado no Arduino IDE
 ### **Projeto de Sistemas Embarcados**
 
