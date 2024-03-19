@@ -8,4 +8,4 @@ Desenvolvido com a finalidade de atender às demandas de diversos setores, desde
 
 ### **Diagrama Elétrico**
 
-
+![Captura de tela 2024-03-18 221043](https://github.com/ConfuseKarma/DataLogger/assets/145780136/1cf86f0d-dddc-4afa-b60b-ad0ef2a1e1bb)
