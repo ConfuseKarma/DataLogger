@@ -42,6 +42,8 @@ Desenvolvido com a finalidade de atender às demandas de diversos setores, desde
 
 <img src="https://github.com/ConfuseKarma/DataLogger/assets/145780136/1cf86f0d-dddc-4afa-b60b-ad0ef2a1e1bb" width="60%">
 
+https://wokwi.com/projects/392907885243715585
+
 ## Código Fonte
 
 O código fonte está disponível no repositório público do GitHub neste [link](https://github.com/ConfuseKarma/DataLogger/blob/main/codigo-fonte.md). Certifique-se de ler e compreender os comentários no código para uma melhor compreensão do funcionamento.
