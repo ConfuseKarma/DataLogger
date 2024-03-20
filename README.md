@@ -34,8 +34,9 @@ Desenvolvido com a finalidade de atender às demandas de diversos setores, desde
 3. **Alimentação**: Conecte o Arduino UNO R3 a uma fonte de alimentação adequada.
 4. **Monitoramento**: O sistema começará a monitorar os valores de luminosidade, temperatura e umidade do ambiente.
 5. **Visualização de Dados**: Os valores médios serão apresentados no display de cristal líquido (LCD).
-6. **Alertas**: Se os parâmetros ficarem fora dos níveis de referência, o sistema emitirá um alerta sonoro e luminoso.
-7. **Backup de Dados**: As leituras e timestamps serão armazenados na memória EEPROM do Arduino.
+6. **Botão Interativo**: Utilize o botão de seleção para escolher o dado que deseja visualizar (temperatura, umidade, luminosidade).
+7. **Alertas**: Se os parâmetros ficarem fora dos níveis de referência, o sistema emitirá um alerta sonoro e luminoso.
+8. **Backup de Dados**: As leituras e timestamps serão armazenados na memória EEPROM do Arduino.
 
 ## **Diagrama Elétrico**
 
