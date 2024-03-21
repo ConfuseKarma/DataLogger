@@ -98,27 +98,44 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 
 ### Setup():
 
-**INICIALIZAÇÃO DE PINOS**
+**1. INICIALIZAÇÃO DE PINOS**
  - **'pinMode(botaoPin, INPUT_PULLUP)':** Define o pino do botão como entrada com resistor pull-up interno ativado. Isso significa que o botão é conectado entre o pino **'botaoPin'** e o GND, e o resistor pull-up interno ajuda a garantir um estado lógico alto quando o botão não está pressionado.
 
-**CONFIGURAÇÃO DO SENSOR LDR**
+**2. CONFIGURAÇÃO DO SENSOR LDR**
 - **'Serial.begin(9600)':** Inicializa a comunicação serial a uma taxa de transmissão de 9600 bps, permitindo a comunicação com o monitor serial para depuração e exibição de informações.
 - **'dht.begin()':** Inicializa o sensor DHT para leitura de temperatura e umidade.
 
-**INICIALIZAÇÃO DO RTC DS3231**
+**3. INICIALIZAÇÃO DO RTC DS3231**
 - **'rtc.begin()':** Inicializa o RTC DS3231. Se não for possível inicializar o RTC, uma mensagem será exibida no monitor serial informando que o DS3231 não foi encontrado.
 - **'if (rtc.lostPower()) { ... }':** Verifica se o RTC foi ligado pela primeira vez, se ficou sem energia ou se a bateria foi esgotada. Se sim, uma mensagem é exibida no monitor serial informando que o DS3231 está OK e, opcionalmente, a data e hora são ajustadas para a data e hora em que o código foi compilado **('__DATE__ e __TIME__')**, ou outra data e hora especificada.
 
-**CONFIGURAÇÃO DO PINO DO LDR:**
+**4. CONFIGURAÇÃO DO PINO DO LDR:**
 - **'pinMode(pinoLDR, INPUT)':** Define o pino ao qual o sensor LDR está conectado como entrada, para realizar a leitura do sensor LDR posteriormente.
 
-**CONFIGURAÇÃO DOS PINOS DO LED E BUZZER:**
+**5. CONFIGURAÇÃO DOS PINOS DO LED E BUZZER:**
 - **'pinMode(redLedPin, OUTPUT)':** Define o pino ao qual o LED vermelho está conectado como saída, para controlar o estado do LED (ligado/desligado).
 - **'pinMode(buzzerPin, OUTPUT)':** Define o pino ao qual o buzzer está conectado como saída, para controlar o som emitido pelo buzzer.
 
-**INICIALIZAÇÃO DO LCD:**
+**6. INICIALIZAÇÃO DO LCD:**
 - **'lcd.init()':** Inicializa o display LCD com os parâmetros especificados (endereço I2C, número de colunas e linhas).
 - **'lcd.backlight()':** Ativa a luz de fundo do LCD.
 
-**APRESENTAÇÃO NO LCD:**
+**7. APRESENTAÇÃO NO LCD:**
 - São exibidos o nome "DewSync" e o slogan "it just works" no LCD, seguidos de uma animação do logo em formato floco de neve.
+
+##Loop():
+
+**1. Leitura do Estado do Botão:**
+- **'int estadoBotao = digitalRead(botaoPin)':** Lê o estado atual do botão conectado ao pino botaoPin.
+- **'unsigned long currentMillis = millis()':** Obtém o tempo atual em milissegundos desde o início do programa.
+
+**2. Verificação de Pressionamento do Botão:**
+- **'if (estadoBotao == LOW && ultimoEstadoBotao == HIGH) { ... }':** Verifica se o botão foi pressionado, comparando seu estado atual com o estado anterior. Isso evita múltiplas detecções de um único pressionamento.
+- **'if(currentMillis - ultimoMillisBotao >= intervalBotao) { ... }':** Verifica se passou o tempo mínimo (intervalBotao) desde o último pressionamento do botão.
+
+**3. Alteração de Modo:**
+- **'ultimoMillisBotao = currentMillis':** Atualiza o tempo da última execução da verificação do botão.
+- **'modoIDGlobal++'**: Incrementa o modo de operação global.
+- **'if (modoIDGlobal > 3) { modoIDGlobal = 0; }'**: Se o modo atual ultrapassar o último modo, volta ao primeiro modo.
+
+
