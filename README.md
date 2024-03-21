@@ -104,8 +104,8 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 
 - **'char daysOfTheWeek[]':** Array de strings utilizado para armazenar os nomes dos dias da semana. Essa informação pode ser útil para exibir a data no formato completo com o dia da semana.
 
-### Setup:
+### Setup():
 
-Inicialização de Pinos:
+**Inicialização de Pinos:**
 
-pinMode(botaoPin, INPUT_PULLUP): Define o pino do botão como entrada com resistor pull-up interno ativado. Isso significa que o botão é conectado entre o pino botaoPin e o GND, e o resistor pull-up interno ajuda a garantir um estado lógico alto quando o botão não está pressionado.
+ - **'pinMode(botaoPin, INPUT_PULLUP)':** Define o pino do botão como entrada com resistor pull-up interno ativado. Isso significa que o botão é conectado entre o pino botaoPin e o GND, e o resistor pull-up interno ajuda a garantir um estado lógico alto quando o botão não está pressionado.
