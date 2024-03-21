@@ -202,3 +202,12 @@ Toca um som de alerta no buzzer (**'tone(5,1000); delay(300); noTone(buzzerPin);
 **'retornarDataHora()':**
 - Recebe um objeto DateTime como parâmetro (geralmente a data e hora atual do RTC).
 - Formata a data e hora em uma string no formato "YYYY-MM-DD HH:MM:SS" e a retorna.
+
+
+### Contribuintes do Projeto
+
+- Aparecida Joana Moreto, RA: 082210001
+- Eduardo Accacio Spedine Toledo, RA: 081220018
+- Guilherme Rodrigues dos Santos, RA: 081220010
+- Kauê de Souza Silva, RA: 081220003
+- Marcos Felipe Correa dos Santos, RA: 081220020
