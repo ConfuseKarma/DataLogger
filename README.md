@@ -69,7 +69,7 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 **• 'int ultimoEstadoBotao':** Armazena o estado anterior do botão para comparar com o estado atual e determinar se o botão foi pressionado.
 
 **• 'struct Anomalia { ... };':** É uma estrutura de dados (struct) utilizada para armazenar informações sobre anomalias detectadas de data, temperatura, umidade e luminosidade no momento da ocorrência.
-
+‎‎‎‎‎‎‎‎ㅤ
 
 **Seção DHT:**
 
