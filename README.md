@@ -138,7 +138,7 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 - **'modoIDGlobal++'**: Incrementa o modo de operação global.
 - **'if (modoIDGlobal > 3) { modoIDGlobal = 0; }'**: Se o modo atual ultrapassar o último modo, volta ao primeiro modo.
 
-** 4. Exibição do Modo Atual no Monitor Serial:**
+**4. Exibição do Modo Atual no Monitor Serial:**
 - **'Serial.print("Modo atual: ")':** Exibe uma mensagem indicando que está mostrando o modo atual no monitor serial.
 - **'Serial.println(modoIDGlobal)':** Imprime o valor do modo atual no monitor serial.
 
