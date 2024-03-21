@@ -75,17 +75,21 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 **Seção DHT:**
 
 **• '#define DHTPIN' e 'DHTTYPE':** Essas macros são utilizadas para definir o pino ao qual o sensor DHT está conectado (DHTPIN) e o tipo de sensor DHT (DHTTYPE). No caso, o sensor está conectado ao pino analógico A1 e é do tipo DHT22. A escolha entre DHT11 e DHT22 pode ser alternada através das definições.
+
 **• 'DHT dht(DHTPIN, DHTTYPE)':** Aqui, é criado um objeto da classe DHT utilizando as informações definidas anteriormente. Esse objeto será usado para interagir com o sensor DHT e realizar as leituras de temperatura e umidade.
 
 **Constantes e Variáveis para Armazenamento de Valores dos Sensores:**
 
 **• '#define NUM_VALORES':** Define o número de valores a serem considerados para cálculos de médias.
+
 **• 'int valoresTemperatura[]', 'valoresUmidade[]', 'valoresLuminosidade[]':** São arrays utilizados para armazenar os últimos valores lidos dos sensores de temperatura, umidade e luminosidade, respectivamente.
+
 **• 'int pesos[]':** Define os pesos a serem utilizados no cálculo da média ponderada dos valores lidos. Neste caso, são pesos decrescentes que favorecem os valores mais recentes.
 
 **Seção Modo Pânico:**
 
 **• 'int redLedPin' e 'buzzerPin':** Definem os pinos aos quais o LED vermelho e o buzzer estão conectados, respectivamente.
+
 **• 'float sinVal' e 'int toneVal':** Variáveis utilizadas para controle da sirene, emitindo um som de acordo com os valores definidos.
 
 **Seção LCD:**
@@ -99,5 +103,7 @@ São definidos arrays de bytes (**'name0x13'**, **'name0x14'**, **'name0x15'**, 
 **Seção LDR:**
 
 **• 'ValorLDR:'** Variável utilizada para armazenar a leitura do sensor LDR, que mede a luminosidade.
+
 **• 'IntensidadeLuz:'** Variável que armazena a intensidade de luz transformada em uma escala de 0 a 100 para exibição no display LCD.
+
 **• 'pinoLDR:'** Define o pino analógico ao qual o sensor LDR está conectado para realizar a leitura da luminosidade.
