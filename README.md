@@ -115,10 +115,12 @@ São definidos arrays de bytes (**'name0x13'**, **'name0x14'**, **'name0x15'**, 
 
 **• 'pinoLDR:'** Define o pino analógico ao qual o sensor LDR está conectado para realizar a leitura da luminosidade.
 
+<br></br>
 **SEÇÃO DO RTC:**
 
 **• 'RTC_DS3231 rtc':** Cria um objeto do tipo RTC_DS3231 para interagir com o módulo RTC DS3231. Esse objeto permite obter a data e hora atuais do relógio em tempo real.
 
+<br></br>
 **DECLARAÇÃO DOS DIAS DA SEMANA:**
 
 **• 'char daysOfTheWeek[]':** Array de strings utilizado para armazenar os nomes dos dias da semana. Essa informação pode ser útil para exibir a data no formato completo com o dia da semana.
