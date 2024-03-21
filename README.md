@@ -154,3 +154,7 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 
 **7. Atualização do Estado do Botão:**
 - **'ultimoEstadoBotao = estadoBotao:'** Atualiza o estado anterior do botão para a próxima iteração.
+
+## Funcionalidades Específicas:
+
+
