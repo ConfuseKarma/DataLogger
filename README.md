@@ -157,4 +157,47 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 
 ### Funcionalidades Específicas:
 
+**'FuncionamentoLDR()':**
+- Realiza a leitura do sensor LDR (**'ValorLDR = analogRead(pinoLDR)'**).
+- Converte o valor lido em uma escala de 0 a 100 (**'IntensidadeLuz = map(ValorLDR, 0, 1023, 1, 100)'**).
+- Exibe a intensidade de luz no LCD.
 
+**'FuncionamentoDHT()':**
+- Realiza a leitura do sensor DHT para temperatura (**'float temperatura = dht.readTemperature()'**) e umidade (**'float umidade = dht.readHumidity()'**).
+- Exibe a temperatura e umidade lidas no LCD.
+
+**'FuncionamentoRTC()':**
+- Obtém a data e hora do RTC DS3231 (**'DateTime now = rtc.now()'**).
+- Exibe a data, dia da semana, hora, minutos e segundos no LCD.
+
+**'Leituras()':**
+- Realiza as leituras dos sensores (DHT e LDR) e do RTC DS3231.
+- Calcula médias ponderadas das leituras de temperatura, umidade e luminosidade.
+- Verifica se há anomalias nos valores lidos (temperatura acima de 25°C, umidade acima de 50% ou luminosidade abaixo de 25).
+- Se houver anomalia, registra a ocorrência na EEPROM e ativa o modo de pânico.
+
+**'ModoPanico()':**
+- Acende o LED vermelho (**'digitalWrite(redLedPin, HIGH)'**).
+- Chama a função **'Sirene()'** para ativar o som de alerta.
+
+**'Sirene()':**
+Toca um som de alerta no buzzer (**'tone(5,1000); delay(300); noTone(buzzerPin);'**).
+
+**'salvarAnomaliaNaEEPROM()':**
+- Cria uma estrutura **'Anomalia'** com informações de data, temperatura, umidade e luminosidade.
+- Escreve essas informações na EEPROM a partir do endereço especificado (**'EEPROM.put(endereco, dados)'**).
+
+**'escreverEEPROM()':**
+- Escreve na EEPROM os dados de uma anomalia (**'EEPROM.put(endereco, dados)'**).
+
+**'lerEEPROM()':**
+- Lê os dados de uma anomalia da EEPROM (**'EEPROM.get(endereco, dados)'**).
+- Retorna os dados lidos.
+
+**'ExibeEEPROM()':**
+- Lê os dados de uma anomalia da EEPROM.
+- Exibe as informações da anomalia (temperatura, umidade e luminosidade) no LCD.
+
+**'retornarDataHora()':**
+- Recebe um objeto DateTime como parâmetro (geralmente a data e hora atual do RTC).
+- Formata a data e hora em uma string no formato "YYYY-MM-DD HH:MM:SS" e a retorna.
