@@ -123,7 +123,7 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 **7. APRESENTAÇÃO NO LCD:**
 - São exibidos o nome "DewSync" e o slogan "it just works" no LCD, seguidos de uma animação do logo em formato floco de neve.
 
-## Loop():
+### Loop():
 
 **1. Leitura do Estado do Botão:**
 - **'int estadoBotao = digitalRead(botaoPin)':** Lê o estado atual do botão conectado ao pino botaoPin.
