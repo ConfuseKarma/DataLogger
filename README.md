@@ -6,7 +6,7 @@ Um dispositivo eficiente e versátil projetado para facilitar a coleta precisa d
 
 Desenvolvido com a finalidade de atender às demandas de diversos setores, desde a pesquisa científica e o monitoramento ambiental até o controle de processos industriais e a automação residencial, nosso datalogger se destaca pela sua facilidade de uso, confiabilidade e escalabilidade.
 
-🎥 Vídeo do Projeto no _Youtube_: 
+🎥 Vídeo do Projeto no _Youtube_: https://youtu.be/wPNV6xjp06o?si=-Z2rLhkQr2qHej7k
 
 ## Especificações Técnicas
 
