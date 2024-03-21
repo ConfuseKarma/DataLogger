@@ -68,21 +68,18 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 - **'int ultimoEstadoBotao':** Armazena o estado anterior do botão para comparar com o estado atual e determinar se o botão foi pressionado.
 - **'struct Anomalia { ... };':** É uma estrutura de dados (struct) utilizada para armazenar informações sobre anomalias detectadas de data, temperatura, umidade e luminosidade no momento da ocorrência.‎‎‎‎‎‎‎‎
 
-
 **SEÇÃO DHT:**
 
 **• '#define DHTPIN' e 'DHTTYPE':** Essas macros são utilizadas para definir o pino ao qual o sensor DHT está conectado (DHTPIN) e o tipo de sensor DHT (DHTTYPE). No caso, o sensor está conectado ao pino analógico A1 e é do tipo DHT22. A escolha entre DHT11 e DHT22 pode ser alternada através das definições.
 
 **• 'DHT dht(DHTPIN, DHTTYPE)':** Aqui, é criado um objeto da classe DHT utilizando as informações definidas anteriormente. Esse objeto será usado para interagir com o sensor DHT e realizar as leituras de temperatura e umidade.
 
-<br></br>
+
 **CONSTANTES E VARIÁVEIS PARA ARMAZENAMENTO DE VALORES DOS SENSORES:**
 
-**• '#define NUM_VALORES':** Define o número de valores a serem considerados para cálculos de médias.
-
-**• 'int valoresTemperatura[]', 'valoresUmidade[]', 'valoresLuminosidade[]':** São arrays utilizados para armazenar os últimos valores lidos dos sensores de temperatura, umidade e luminosidade, respectivamente.
-
-**• 'int pesos[]':** Define os pesos a serem utilizados no cálculo da média ponderada dos valores lidos. Neste caso, são pesos decrescentes que favorecem os valores mais recentes.
+- **'#define NUM_VALORES':** Define o número de valores a serem considerados para cálculos de médias.
+- **'int valoresTemperatura[]', 'valoresUmidade[]', 'valoresLuminosidade[]':** São arrays utilizados para armazenar os últimos valores lidos dos sensores de temperatura, umidade e luminosidade, respectivamente.
+- **'int pesos[]':** Define os pesos a serem utilizados no cálculo da média ponderada dos valores lidos. Neste caso, são pesos decrescentes que favorecem os valores mais recentes.
 
 <br></br>
 **SEÇÃO MODO PÂNICO:**
