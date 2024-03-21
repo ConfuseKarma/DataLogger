@@ -50,7 +50,7 @@ https://wokwi.com/projects/392907885243715585
 O código fonte está disponível no repositório público do GitHub neste [link](https://github.com/ConfuseKarma/DataLogger/blob/main/codigo-fonte.md). Certifique-se de ler e compreender os comentários no código para uma melhor compreensão do funcionamento.
 
 
-## Lógica do Código
+## Lógica do Código Fonte
 
 ### Inclusão de Bibliotecas e Definição de Constantes e Variáveis Globais:
 
@@ -69,4 +69,6 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 **• 'int ultimoEstadoBotao':** Armazena o estado anterior do botão para comparar com o estado atual e determinar se o botão foi pressionado.
 
 **• 'struct Anomalia { ... };':** É uma estrutura de dados (struct) utilizada para armazenar informações sobre anomalias detectadas de data, temperatura, umidade e luminosidade no momento da ocorrência.
+
+####4
 
