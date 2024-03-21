@@ -106,6 +106,13 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 
 ### Setup():
 
-**Inicialização de Pinos:**
+**Inicialização de Pinos**
+ - **'pinMode(botaoPin, INPUT_PULLUP)':** Define o pino do botão como entrada com resistor pull-up interno ativado. Isso significa que o botão é conectado entre o pino **'botaoPin'** e o GND, e o resistor pull-up interno ajuda a garantir um estado lógico alto quando o botão não está pressionado.
 
- - **'pinMode(botaoPin, INPUT_PULLUP)':** Define o pino do botão como entrada com resistor pull-up interno ativado. Isso significa que o botão é conectado entre o pino botaoPin e o GND, e o resistor pull-up interno ajuda a garantir um estado lógico alto quando o botão não está pressionado.
+**Configuração do Sensor LDR**
+- **'Serial.begin(9600)':** Inicializa a comunicação serial a uma taxa de transmissão de 9600 bps, permitindo a comunicação com o monitor serial para depuração e exibição de informações.
+- **'dht.begin()':** Inicializa o sensor DHT para leitura de temperatura e umidade.
+
+**Inicialização do RTC DS3231**
+- **'rtc.begin()':** Inicializa o RTC DS3231. Se não for possível inicializar o RTC, uma mensagem será exibida no monitor serial informando que o DS3231 não foi encontrado.
+- **'if (rtc.lostPower()) { ... }':** Verifica se o RTC foi ligado pela primeira vez, se ficou sem energia ou se a bateria foi esgotada. Se sim, uma mensagem é exibida no monitor serial informando que o DS3231 está OK e, opcionalmente, a data e hora são ajustadas para a data e hora em que o código foi compilado (__DATE__ e __TIME__), ou outra data e hora especificada.
