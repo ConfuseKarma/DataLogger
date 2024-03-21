@@ -58,7 +58,7 @@ O código começa incluindo diversas bibliotecas necessárias para o funcionamen
 
 Em seguida, são definidas constantes e variáveis globais que serão utilizadas ao longo do programa:
 
-**SEÇÃO GERAL:**
+**Seção Geral:**
 - **'unsigned long intervalLeituras', 'ultimoMillisModoAtual' e 'ultimoMillisBotao':** Essas variáveis são utilizadas para armazenar o tempo em milissegundos da última execução de diferentes tarefas relacionadas às leituras dos sensores, atualização do modo de operação e detecção do botão.
 - **'const long ultimoMillisLeituras', 'intervalModo' e 'intervalBotao':** Essas constantes definem os intervalos de tempo em milissegundos para realizar as diferentes tarefas no programa. Por exemplo, intervalLeituras define o intervalo de tempo para as leituras dos sensores.
 - **'int modoIDGlobal':** Esta variável inteira mantém o modo atual de operação do sistema. Ela é incrementada conforme o botão é pressionado e utilizada para determinar qual modo de operação está ativo.
@@ -66,34 +66,34 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 - **'int ultimoEstadoBotao':** Armazena o estado anterior do botão para comparar com o estado atual e determinar se o botão foi pressionado.
 - **'struct Anomalia { ... };':** É uma estrutura de dados (struct) utilizada para armazenar informações sobre anomalias detectadas de data, temperatura, umidade e luminosidade no momento da ocorrência.‎‎‎‎‎‎‎‎
 
-**SEÇÃO DHT:**
+**Seção DHT:**
 - **'#define DHTPIN' e 'DHTTYPE':** Essas macros são utilizadas para definir o pino ao qual o sensor DHT está conectado (DHTPIN) e o tipo de sensor DHT (DHTTYPE). No caso, o sensor está conectado ao pino analógico A1 e é do tipo DHT22. A escolha entre DHT11 e DHT22 pode ser alternada através das definições.
 - **'DHT dht(DHTPIN, DHTTYPE)':** Aqui, é criado um objeto da classe DHT utilizando as informações definidas anteriormente. Esse objeto será usado para interagir com o sensor DHT e realizar as leituras de temperatura e umidade.
 
-**CONSTANTES E VARIÁVEIS PARA ARMAZENAMENTO DE VALORES DOS SENSORES:**
+**Constantes e Variáveis para Armazenamento de Valores dos Sensores:**
 - **'#define NUM_VALORES':** Define o número de valores a serem considerados para cálculos de médias.
 - **'int valoresTemperatura[]', 'valoresUmidade[]', 'valoresLuminosidade[]':** São arrays utilizados para armazenar os últimos valores lidos dos sensores de temperatura, umidade e luminosidade, respectivamente.
 - **'int pesos[]':** Define os pesos a serem utilizados no cálculo da média ponderada dos valores lidos. Neste caso, são pesos decrescentes que favorecem os valores mais recentes.
 
-**SEÇÃO MODO PÂNICO:**
+**Seção Modo Pânico:**
 - **'int redLedPin' e 'buzzerPin':** Definem os pinos aos quais o LED vermelho e o buzzer estão conectados, respectivamente.
 - **'float sinVal' e 'int toneVal':** Variáveis utilizadas para controle da sirene, emitindo um som de acordo com os valores definidos.
 
-**SEÇÃO LCD:**
+**Seção LCD:**
 - **'LiquidCrystal_I2C lcd(0x27, 16, 2)':** Aqui é criado um objeto da classe LiquidCrystal_I2C para controlar um display LCD de 16 colunas por 2 linhas, com endereço I2C 0x27. Esse objeto será usado para exibir informações no display LCD.
 
-**SEÇÃO INTRO/LOGO:**
+**Seção Intro/LOGO:**
 - São definidos arrays de bytes (**'name0x13'**, **'name0x14'**, **'name0x15'**, **'name1x13'**, **'name1x14'**, **'name1x15'**) que representam caracteres personalizados a serem exibidos no display LCD. Esses caracteres são utilizados para formar um logo ou uma introdução visual no display.
 
-**SEÇÃO LDR:**
+**Seção LDR:**
 - **'ValorLDR:'** Variável utilizada para armazenar a leitura do sensor LDR, que mede a luminosidade.
 - **'IntensidadeLuz:'** Variável que armazena a intensidade de luz transformada em uma escala de 0 a 100 para exibição no display LCD.
 - **'pinoLDR:'** Define o pino analógico ao qual o sensor LDR está conectado para realizar a leitura da luminosidade.
 
-**SEÇÃO DO RTC:**
+**Seção do RTC:**
 - **'RTC_DS3231 rtc':** Cria um objeto do tipo RTC_DS3231 para interagir com o módulo RTC DS3231. Esse objeto permite obter a data e hora atuais do relógio em tempo real.
 
-**DECLARAÇÃO DOS DIAS DA SEMANA:**
+**Declaração dos Dias da Semana:**
 - **'char daysOfTheWeek[]':** Array de strings utilizado para armazenar os nomes dos dias da semana. Essa informação pode ser útil para exibir a data no formato completo com o dia da semana.
 
 ### Setup():
