@@ -70,6 +70,7 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 
 **• 'struct Anomalia { ... };':** É uma estrutura de dados (struct) utilizada para armazenar informações sobre anomalias detectadas de data, temperatura, umidade e luminosidade no momento da ocorrência.
 ‎‎‎‎‎‎‎‎
+
 **Seção DHT:**
 
 DHTPIN e DHTTYPE: Essas macros são utilizadas para definir o pino ao qual o sensor DHT está conectado (DHTPIN) e o tipo de sensor DHT (DHTTYPE). No caso, o sensor está conectado ao pino analógico A1 e é do tipo DHT22. A escolha entre DHT11 e DHT22 pode ser alternada através das definições.
