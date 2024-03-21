@@ -24,6 +24,7 @@ Desenvolvido com a finalidade de atender às demandas de diversos setores, desde
 - Protoboard
 - Jumpers
 - LEDs
+- Buzzer
 - Resistores
 
 
