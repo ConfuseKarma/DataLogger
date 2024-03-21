@@ -148,7 +148,7 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 - Dentro deste bloco, são chamadas as funções correspondentes a cada modo de operação (**'FuncionamentoRTC()'**, **'FuncionamentoLDR()**, **'FuncionamentoDHT()'**, **'ExibeEEPROM())'**, de acordo com o valor de **'modoIDGlobal'**.
 
 **6. Realização de Leituras:**
-- **'if (currentMillis - ultimoMillisLeituras >= intervalLeituras) { ... }':** Verifica se passou o tempo mínimo (intervalLeituras) desde a última leitura dos sensores.
+- **'if (currentMillis - ultimoMillisLeituras >= intervalLeituras) { ... }':** Verifica se passou o tempo mínimo (**'intervalLeituras'**) desde a última leitura dos sensores.
 - **'ultimoMillisLeituras = currentMillis'**: Atualiza o tempo da última execução da leitura dos sensores.
 - Dentro deste bloco, é chamada a função **'Leituras()'** para realizar as leituras dos sensores, calcular médias ponderadas e verificar anomalias.
 
