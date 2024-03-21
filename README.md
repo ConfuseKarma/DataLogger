@@ -52,6 +52,10 @@ O código fonte está disponível no repositório público do GitHub neste [link
 
 ## Lógica do Código
 
-### Inclusão de Bibliotecas e Declarações de Variáveis Globais
+### Inclusão de Bibliotecas e Definição de Constantes e Variáveis Globais:
 
-**Inclusão de Bibliotecas** - São incluídas as bibliotecas necessárias para o funcionamento do código: Wire (para comunicação I2C), LiquidCrystal_I2C (para controle do LCD via I2C), RTClib (para manipulação do RTC DS3231), DHT (para o sensor de temperatura e umidade) e EEPROM (para acessar a memória EEPROM do Arduino).
+O código começa incluindo diversas bibliotecas necessárias para o funcionamento do programa, como Wire (para comunicação I2C), LiquidCrystal_I2C (para controle de um display LCD), RTClib (para manipulação do RTC), DHT (para o sensor de temperatura e umidade) e EEPROM (para acessar a memória EEPROM do Arduino). Essas bibliotecas fornecem funções e métodos que facilitam o acesso e o controle dos dispositivos e sensores conectados ao Arduino.
+Em seguida, são definidas constantes e variáveis globais que serão utilizadas ao longo do programa:
+
+**• 'ultimoMillisLeituras', 'ultimoMillisModoAtual' e 'ultimoMillisBotao':** Essas variáveis são do tipo 'unsigned long' e são utilizadas para armazenar o tempo em milissegundos da última execução de diferentes tarefas relacionadas às leituras dos sensores, atualização do modo de operação e detecção do botão.
+
