@@ -45,6 +45,8 @@ Desenvolvido com a finalidade de atender às demandas de diversos setores, desde
 https://wokwi.com/projects/392907885243715585
 
 ## Lógica do Código
+#a
+
 
 ## Código Fonte
 
