@@ -40,7 +40,7 @@ Desenvolvido com a finalidade de atender às demandas de diversos setores, desde
 
 ## **Diagrama Elétrico**
 
-<img src="https://github.com/ConfuseKarma/DataLogger/assets/145780136/1cf86f0d-dddc-4afa-b60b-ad0ef2a1e1bb" width="60%">
+<img src="https://github.com/ConfuseKarma/DataLogger/assets/145780136/3f22056d-c2c8-41d3-9c4f-ab6cc2ee0b94" alt="arduino-circuito" width="75%">
 
 https://wokwi.com/projects/392907885243715585
 
