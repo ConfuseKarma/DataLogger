@@ -172,7 +172,7 @@ Em seguida, são definidas constantes e variáveis globais que serão utilizadas
 
 **'Leituras()':**
 - Realiza as leituras dos sensores (DHT e LDR) e do RTC DS3231.
-- Calcula médias ponderadas das leituras de temperatura, umidade e luminosidade.
+- Calcula médias ponderadas das leituras de temperatura, umidade e luminosidade. Utiliza um método de média móvel ponderada, armazenando os últimos valores em arrays e aplicando pesos decrescentes.
 - Verifica se há anomalias nos valores lidos (temperatura acima de 25°C, umidade acima de 50% ou luminosidade abaixo de 25).
 - Se houver anomalia, registra a ocorrência na EEPROM e ativa o modo de pânico.
 
